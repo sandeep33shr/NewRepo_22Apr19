@@ -1,0 +1,306 @@
+<Selenium>
+
+
+	<Screen id="CorporateClient" title="Corporate Client Details">
+		<Field id="lnkFinance" type="Button" fieldLabel="Finance"
+			pathType="css" screenShot="false">
+		</Field>
+		<Field id="lnkCollection" type="Button"
+			fieldLabel="Collection Link avilability" pathType="css"
+			screenShot="false">
+		</Field>
+	</Screen>
+	<Screen id="CollectionDetails" title="SSP - Pure Insurance">
+		<Field id="fldAccountCode" type="textfield"
+			fieldLabel="Company Code" pathType="css" screenShot="false">
+		</Field>
+		<Field id="fldAccountCode" type="tabOut"
+			fieldLabel="tabout from Account field" pathType="css"
+			screenShot="false">
+		</Field>
+		<Field id="drpMediaType" type="select"
+			fieldLabel="Select value from dropdown" pathType="css"
+			screenShot="false">
+		</Field>
+		<Field id="drpMediaType" type="tabOut"
+			fieldLabel="tabout from Media type field" pathType="css"
+			screenShot="false">
+		</Field>
+		<Field id="" type="selectSpinner" fieldLabel="" pathType=""
+			screenShot="false">
+		</Field>
+		<Field id="fldMediaReference" type="textfield"
+			fieldLabel="Enter value in Media Reference field" pathType="css"
+			screenShot="false">
+		</Field>
+		<Field id="fldTransactionDate" type="textfield"
+			fieldLabel="Enter future date" pathType="css" screenShot="false">
+		</Field>
+		<Field id="drpBank" type="select"
+			fieldLabel="Select Bank from dropdown" pathType="css"
+			screenShot="false">
+		</Field>
+		<Field id="fldAmount" type="textfield"
+			fieldLabel="Enter value in Amount field" pathType="css"
+			screenShot="false">
+		</Field>
+		<Field id="" type="selectSpinner" fieldLabel="" pathType=""
+			screenShot="false">
+		</Field>
+		<Field id="btnOk" type="Button" fieldLabel="Click OK button"
+			pathType="css" screenShot="false">
+		</Field>
+
+	</Screen>
+	<Screen id="Allocation" title="SSP - Pure Insurance">
+
+		<Field id="btnOkAllocation" type="Button" fieldLabel="Press OK"
+			pathType="css" screenShot="false">
+		</Field>
+	</Screen>
+	<Screen id="COLLECTIONLIST" title="SSP - Pure Insurance">
+		<Field id="columnStatus" type="assertGetText"
+			fieldLabel="Status unallocated" pathType="css" screenShot="false"
+			validMessage="Status is unallocated"
+			errorMessage="Status is not unallocated">
+		</Field>
+		<Field id="chkUnallocated" type="DeSelectCheckbox"
+			fieldLabel="Uncheck unallocated" pathType="css" screenShot="false">
+		</Field>
+		<Field id="" type="selectSpinner" fieldLabel="" pathType=""
+			screenShot="false">
+		</Field>
+
+		<Field id="rowCountCollectionList" type="assertTableRowsCount"
+			fieldLabel="row count" pathType="css" screenShot="false"
+			validMessage="Unallocated status row is not appearing"
+			errorMessage="Unallocated status row is appearing">
+		</Field>
+		<Field id="chkUnallocated" type="checkBox"
+			fieldLabel="check unallocated" pathType="css" screenShot="false">
+		</Field>
+		<Field id="lnkActionMenu" type="Button"
+			fieldLabel="Click ellipsis" pathType="css" screenShot="false">
+		</Field>
+		<Field id="lnkEditAllocation" type="Button"
+			fieldLabel="Click Edit Allocation link" pathType="css"
+			screenShot="false">
+		</Field>
+	</Screen>
+	<Screen id="Allocation" title="SSP - Pure Insurance">
+		<Field id="fldAllocated1stRecord" type="cleartextfield"
+			fieldLabel="Clear Allocated field" pathType="css" screenShot="false">
+		</Field>
+		<Field id="fldAllocated1stRecord" type="textfield"
+			fieldLabel="Enter Part Amount" pathType="css" screenShot="false">
+		</Field>
+		<Field id="fldWriteOff" type="Button" fieldLabel="Click"
+			pathType="css" screenShot="false">
+		</Field>
+		<Field id="btnOkAllocation" type="Button"
+			fieldLabel="Click OK button" pathType="css" screenShot="false">
+		</Field>
+	</Screen>
+
+	<Screen id="COLLECTIONLIST" title="SSP - Pure Insurance">
+		<Field id="columnStatus" type="assertGetText"
+			fieldLabel="Status Part Allocated" pathType="css" screenShot="false"
+			validMessage="Status is Part allocated"
+			errorMessage="Status is not Part allocated">
+		</Field>
+		<Field id="chkPartAllocated" type="DeSelectCheckbox"
+			fieldLabel="Uncheck Part allocated" pathType="css" screenShot="false">
+		</Field>
+		<Field id="" type="selectSpinner" fieldLabel="" pathType=""
+			screenShot="false">
+		</Field>
+		<Field id="rowCountCollectionList" type="assertTableRowsCount"
+			fieldLabel="row count" pathType="css" screenShot="false"
+			validMessage="Part allocated status row is not appearing"
+			errorMessage="Part allocated status row is appearing">
+		</Field>
+		<Field id="chkPartAllocated" type="checkBox"
+			fieldLabel="check Part allocated" pathType="css" screenShot="false">
+		</Field>
+		<Field id="lnkActionMenu" type="Button"
+			fieldLabel="Click ellipsis" pathType="css" screenShot="false">
+		</Field>
+		<Field id="lnkEditAllocation" type="Button"
+			fieldLabel="Click Edit Allocation link" pathType="css"
+			screenShot="false">
+		</Field>
+	</Screen>
+	<Screen id="Allocation" title="SSP - Pure Insurance">
+		<Field id="fldAllocated1stRecord" type="cleartextfield"
+			fieldLabel="Clear Allocated field" pathType="css" screenShot="false">
+		</Field>
+		<Field id="fldAllocated1stRecord" type="textfield"
+			fieldLabel="Enter full receipt Amount" pathType="css"
+			screenShot="false">
+		</Field>
+		<Field id="fldWriteOff" type="Button" fieldLabel="Click"
+			pathType="css" screenShot="false">
+		</Field>
+		<Field id="btnOkAllocation" type="Button"
+			fieldLabel="Click OK Albutton" pathType="css" screenShot="false">
+		</Field>
+	</Screen>
+
+	<Screen id="COLLECTIONLIST" title="SSP - Pure Insurance">
+		<Field id="columnStatus" type="assertGetText"
+			fieldLabel="Status Allocated" pathType="css" screenShot="false"
+			validMessage="Status is allocated"
+			errorMessage="Status is not allocated">
+		</Field>
+		<Field id="chkAllocated" type="DeSelectCheckbox"
+			fieldLabel="Uncheck allocated" pathType="css" screenShot="false">
+		</Field>
+		<Field id="" type="selectSpinner" fieldLabel="" pathType=""
+			screenShot="false">
+		</Field>
+		<Field id="rowCountCollectionList" type="assertTableRowsCount"
+			fieldLabel="row count" pathType="css" screenShot="false"
+			validMessage="Fullly allocated status row is not appearing"
+			errorMessage="Fully allocated status row is appearing">
+		</Field>
+		<Field id="chkAllocated" type="checkBox"
+			fieldLabel="check allocated" pathType="css" screenShot="false">
+		</Field>
+		<Field id="" type="selectSpinner" fieldLabel="" pathType=""
+			screenShot="false">
+		</Field>
+		<Field id="rowCountCollectionList" type="assertTableRowsCount"
+			fieldLabel="row count Allocated" pathType="css" screenShot="false"
+			validMessage="Fully allocated status row is not appearing"
+			errorMessage="Fully allocated status row is appearing">
+		</Field>
+		<!-- **** 7621**** -->
+
+		<Field id="btnAdd" fieldLabel="Add button" type="Button"
+			inputType="alphanumeric" length="10" pathType="css"
+			screenShot="false">
+		</Field>
+	</Screen>
+	<Screen id="CollectionDetails" title="SSP - Pure Insurance">
+
+
+		<Field id="fldAccountCode" type="textfield"
+			fieldLabel="Company Code" pathType="css" screenShot="false">
+		</Field>
+		<Field id="fldAccountCode" type="tabOut"
+			fieldLabel="tabout from Account field" pathType="css"
+			screenShot="false">
+		</Field>
+		<Field id="drpMediaType" type="select"
+			fieldLabel="Select value from dropdown" pathType="css"
+			screenShot="false">
+		</Field>
+		<Field id="drpMediaType" type="tabOut"
+			fieldLabel="tabout from Media type field" pathType="css"
+			screenShot="false">
+		</Field>
+		<Field id="" type="selectSpinner" fieldLabel="" pathType=""
+			screenShot="false">
+		</Field>
+		<Field id="fldMediaReference" type="textfield"
+			fieldLabel="Enter value in Media Reference field" pathType="css"
+			screenShot="false">
+		</Field>
+		<Field id="fldTransactionDate" type="textfield"
+			fieldLabel="Enter future date" pathType="css" screenShot="false">
+		</Field>
+		<Field id="drpBank" type="select"
+			fieldLabel="Select Bank from dropdown" pathType="css"
+			screenShot="false">
+		</Field>
+		<Field id="fldAmount" type="textfield"
+			fieldLabel="Enter value in Amount field 2nd time" pathType="css"
+			screenShot="false">
+		</Field>
+		<Field id="" type="selectSpinner" fieldLabel="" pathType=""
+			screenShot="false">
+		</Field>
+		<Field id="btnOk" type="Button" fieldLabel="Click OK button"
+			pathType="css" screenShot="false">
+		</Field>
+
+	</Screen>
+	<Screen id="Allocation" title="SSP - Pure Insurance">
+		<Field id="fldOSAmount" type="dynamicHashMap"
+			fieldLabel="O/S Amount" pathType="css" screenShot="false">
+		</Field>
+
+		<Field id="fldAllocated1stRecord" type="cleartextfield"
+			fieldLabel="Clear Allocated field" pathType="css" screenShot="false">
+		</Field>
+		<Field id="fldAllocated1stRecord" type="textfield"
+			fieldLabel="O/S Amount" pathType="css" screenShot="false">
+		</Field>
+		<Field id="fldWriteOff" type="Button" fieldLabel="Click"
+			pathType="css" screenShot="false">
+		</Field>
+		<Field id="btnOkAllocation" type="Button"
+			fieldLabel="Click OK button" pathType="css" screenShot="false">
+		</Field>
+	</Screen>
+
+
+	<Screen id="COLLECTIONLIST" title="SSP - Pure Insurance">
+		<Field id="btnAdd" fieldLabel="Add button" type="Button"
+			inputType="alphanumeric" length="10" pathType="css"
+			screenShot="false">
+		</Field>
+	</Screen>
+	<Screen id="CollectionDetails" title="SSP - Pure Insurance">
+
+		<Field id="fldAccountCode" type="textfield"
+			fieldLabel="Company Code" pathType="css" screenShot="false">
+		</Field>
+		<Field id="fldAccountCode" type="tabOut"
+			fieldLabel="tabout from Account field" pathType="css"
+			screenShot="false">
+		</Field>
+		<Field id="drpMediaType" type="select"
+			fieldLabel="Select value from dropdown" pathType="css"
+			screenShot="false">
+		</Field>
+		<Field id="drpMediaType" type="tabOut"
+			fieldLabel="tabout from Media type field" pathType="css"
+			screenShot="false">
+		</Field>
+		<Field id="" type="selectSpinner" fieldLabel="" pathType=""
+			screenShot="false">
+		</Field>
+		<Field id="fldMediaReference" type="textfield"
+			fieldLabel="Enter value in Media Reference field" pathType="css"
+			screenShot="false">
+		</Field>
+		<Field id="fldTransactionDate" type="textfield"
+			fieldLabel="Enter future date" pathType="css" screenShot="false">
+		</Field>
+		<Field id="drpBank" type="select"
+			fieldLabel="Select Bank from dropdown" pathType="css"
+			screenShot="false">
+		</Field>
+		<Field id="fldAmount" type="textfield"
+			fieldLabel="Enter value in Amount field 3rd time" pathType="css"
+			screenShot="false">
+		</Field>
+		<Field id="" type="selectSpinner" fieldLabel="" pathType=""
+			screenShot="false">
+		</Field>
+		<Field id="btnOk" type="Button" fieldLabel="Click OK button"
+			pathType="css" screenShot="false">
+		</Field>
+
+	</Screen>
+	<Screen id="Allocation" title="SSP - Pure Insurance">
+		<Field id="rowCountAllocation" type="assertTableRowsCount"
+			fieldLabel="row count Allocation screen" pathType="css"
+			screenShot="false"
+			validMessage="Fully marked record row is not appearing"
+			errorMessage="Fully marked record row is not appearing">
+		</Field>
+	</Screen>
+
+</Selenium>

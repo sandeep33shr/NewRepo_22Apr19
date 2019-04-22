@@ -1,0 +1,25 @@
+<Selenium>
+
+	<Iteration id="Iteration_0">
+		<Field fieldLabel="Select value from dropdown" input="Cheque">
+		</Field>
+		<Field fieldLabel="Enter value in Media Reference field"
+			input="Media Reference value">
+		</Field>
+		<Field fieldLabel="Enter future date" input="25/12/2020">
+		</Field>
+		<Field fieldLabel="Select Bank from dropdown"
+			input="Bank Suspense Account">
+		</Field>
+		<Field fieldLabel="Enter value in Amount field" input="10">
+		</Field>
+		<Field fieldLabel="Account Balance" input="dynamicHashMap">
+		</Field>
+		
+       <Field fieldLabel="Company Code" input="dynamicHashMap">
+		</Field>
+		 <Field fieldLabel="Status Allocated" input="A">
+		</Field>
+
+	</Iteration>
+</Selenium>

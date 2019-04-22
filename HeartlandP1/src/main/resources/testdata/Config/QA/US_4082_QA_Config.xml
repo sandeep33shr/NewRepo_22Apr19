@@ -1,0 +1,13 @@
+<Config>
+	<Feature id="US_4082" title="Allocation Screen">
+	
+	    <TC id="TC_4082_7647" Description="This case is designed to test availbility of Auto Allocation button via Client 360"
+			XML_Location="US_4082\TC_4082_7647.xml" Iteration="1">
+		</TC>
+		<TC id="TC_4082_7647_1" Description="This case is designed to test availbility of Auto Allocation button via Finance>Collection"
+			XML_Location="US_4082\TC_4082_7647_1.xml" Iteration="1">
+		</TC>
+		
+	
+	</Feature>
+</Config>

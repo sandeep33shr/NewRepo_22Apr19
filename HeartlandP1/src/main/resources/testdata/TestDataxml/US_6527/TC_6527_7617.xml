@@ -1,0 +1,48 @@
+<Selenium>
+
+
+	<Iteration id="Iteration_0">
+
+		<Field fieldLabel="Company Code" input="dynamicHashMap">
+		</Field>
+		<Field fieldLabel="Select value from dropdown" input="Cheque">
+		</Field>
+		<Field fieldLabel="Enter value in Media Reference field"
+			input="Media Reference value">
+		</Field>
+		<Field fieldLabel="Enter future date" input="25/12/2020">
+		</Field>
+		<Field fieldLabel="Select Bank from dropdown"
+			input="Bank Suspense Account">
+		</Field>
+		<Field fieldLabel="Enter value in Amount field" input="10.00">
+		</Field>
+		<Field fieldLabel="Status unallocated" input="U">
+		</Field>
+		<Field fieldLabel="row count" input="0">
+		</Field>
+		<Field fieldLabel="Enter Part Amount" input="1">
+		</Field>
+		<Field fieldLabel="Status Part Allocated" input="P">
+		</Field>
+		<Field fieldLabel="Enter full receipt Amount" input="10.00">
+		</Field>
+		<Field fieldLabel="Status Allocated" input="A">
+		</Field>
+		<Field fieldLabel="row count Allocated" input="1">
+		</Field>
+	<!-- new case  -->
+		
+		<Field fieldLabel="Enter value in Amount field 2nd time" input="1100.00">
+		</Field>
+         <Field fieldLabel="O/S Amount" input="dynamicHashMap">
+		</Field>
+		
+		<Field fieldLabel="Enter value in Amount field 3rd time" input="11.00">
+		</Field>
+        
+		<Field fieldLabel="row count Allocation screen" input="0">
+		</Field>
+		
+	</Iteration>
+</Selenium>
