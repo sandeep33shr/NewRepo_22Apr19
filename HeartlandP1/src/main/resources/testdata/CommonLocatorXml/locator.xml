@@ -2762,8 +2762,23 @@
 		<Field id="actionMenu"
 			path="#ctl00_cntMainBody_gvGetTransactiondetails a[title='Action Menu']">
 		</Field>
+		<Field id="lnkExpand1stRow"
+			path="a#ctl00_cntMainBody_gvGetTransactiondetails_ctl02_lnkbtnExpand">
+		</Field>
+		<Field id="lnkCollapse1stRow"
+			path="a#ctl00_cntMainBody_gvGetTransactiondetails_ctl02_lnkbtnCollapse">
+		</Field>
+		<Field id="lnkExpand3rdRow"
+			path="a#ctl00_cntMainBody_gvGetTransactiondetails_ctl04_lnkbtnExpand">
+		</Field>
+		<Field id="tabAccountDetails"
+			path="a[href='#tab-accountdetails']">
+		</Field>
 		<Field id="viewAllocation"
 			path="li[class*='open'] a[id*='lblhypViewAllocation']">
+		</Field>
+		<Field id="allColumnsExpand"
+			path="#ctl00_cntMainBody_UpdDocRefTransaction [class='grid-card table-responsive no-margin'] th">
 		</Field>
 		<Field id="allocatedAmount"
 			path="div#MasterPages_Internal_modal td:nth-child(4)">

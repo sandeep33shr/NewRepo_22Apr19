@@ -18,7 +18,7 @@
 		value="http://localhost/Pure.Portal/LoginPlatform.aspx"></parameter>
 	<test name="MMVP-Login" parallel="methods" thread-count="1">
 		<classes>
-			<class name="com.ssp.regression.insurer.testscripts.US_4082">
+			<class name="com.ssp.regression.insurer.testscripts.US_6636">
 
 				<methods>
 
