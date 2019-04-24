@@ -63,7 +63,7 @@ public class US_6453 extends BaseTest {
 		} catch (Exception e) {
 			Log.exception(e, driver, extentedReport);
 		} finally {
-			/*driver.quit();*/
+			driver.quit();
 			Log.testCaseResult(extentedReport);
 			Log.endTestCase(extentedReport);
 
@@ -104,7 +104,7 @@ public class US_6453 extends BaseTest {
 		} catch (Exception e) {
 			Log.exception(e, driver, extentedReport);
 		} finally {
-			/*driver.quit();*/
+			driver.quit();
 			Log.testCaseResult(extentedReport);
 			Log.endTestCase(extentedReport);
 
@@ -146,7 +146,7 @@ public class US_6453 extends BaseTest {
 		} catch (Exception e) {
 			Log.exception(e, driver, extentedReport);
 		} finally {
-			/*driver.quit();*/
+			driver.quit();
 			Log.testCaseResult(extentedReport);
 			Log.endTestCase(extentedReport);
 
@@ -156,7 +156,7 @@ public class US_6453 extends BaseTest {
 	}
 	@AfterClass
 	public void closeBrowser() {
-		//if (driver != null)
-			//driver.quit();
+		if (driver != null)
+			driver.quit();
 	}
 }
