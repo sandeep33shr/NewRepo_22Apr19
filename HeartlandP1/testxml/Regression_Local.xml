@@ -18,16 +18,16 @@
 		value="http://localhost/Pure.Portal/LoginPlatform.aspx"></parameter>
 	<test name="MMVP-Login" parallel="methods" thread-count="1">
 		<classes>
-			<class name="com.ssp.regression.insurer.testscripts.US_6636">
+			<class name="com.ssp.regression.insurer.testscripts.US_6453">
 
 				<methods>
+					<!-- <include name="TC_6453_8659_01" /> -->
 
-					
-			<!-- 	<include name="TC_4082_7647_1" /> -->
-					<!-- 	<include name="TC_6527_7619" /> -->
-				
-					
-					
+					<!-- <include name="TC_4082_7647_1" /> -->
+					<!-- <include name="TC_6527_7619" /> -->
+
+
+
 				</methods>
 			</class>
 		</classes>

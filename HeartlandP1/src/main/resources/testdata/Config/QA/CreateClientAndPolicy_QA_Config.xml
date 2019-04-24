@@ -71,11 +71,11 @@
 			XML_Location="CreateClientAndPolicy\InvoiceCreateClientAndPolicy.xml"
 			Iteration="1">
 		</TC>
-		<TC id="TC_6453_6822"
+		<!-- <TC id="TC_6453_6822"
 			Description="TTo Validate that the availability of collection menu option under Finance ribbon menu"
 			XML_Location="CreateClientAndPolicy\PayNowCreateClientAndPolicyCollectionDetails.xml"
 			Iteration="1">
-		</TC>
+		</TC> -->
 		
 		<TC id="TC_6524_7459"
 			Description="This case is designed to test dynamic logic between Allocated column and checkbox column"
@@ -118,5 +118,21 @@
 			XML_Location="CreateClientAndPolicy\CreateClient_GuestHouse_Invoice.xml"
 			Iteration="1">
 		</TC>
+		<TC id="TC_6453_6822"
+			Description="This case is designed to test availability and functionality of collection details screen during Quote and Buy"
+			XML_Location="CreateClientAndPolicy\CreateClient_GuestHouse_SaveQuote.xml"
+			Iteration="1">
+		</TC>
+		<TC id="TC_6453_8659"
+			Description="This test case is designed to check availability and functionality of Write off difference screen during quote and buy process"
+			XML_Location="CreateClientAndPolicy\CreateClient_GuestHouse_SaveQuote.xml"
+			Iteration="1">
+		</TC>
+		<TC id="TC_6453_8659_01"
+			Description="This test case is designed to check availability and functionality of Yes button of Write off difference screen during quote and buy process"
+			XML_Location="CreateClientAndPolicy\CreateClient_GuestHouse_SaveQuote.xml"
+			Iteration="1">
+		</TC>
+	
 	</Feature>
 </Config>

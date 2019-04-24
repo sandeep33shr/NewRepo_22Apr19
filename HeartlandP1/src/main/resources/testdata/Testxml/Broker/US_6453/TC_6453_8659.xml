@@ -1,0 +1,146 @@
+<Selenium>
+
+	<Screen id="CollectionDetails" title="SSP - Pure Insurance">
+
+
+		<Field id="drpMediaType" type="select"
+			fieldLabel="Select value from dropdown" pathType="css"
+			screenShot="false">
+		</Field>
+		<Field id="drpMediaType" type="tabOut"
+			fieldLabel="tabout from Media type field" pathType="css"
+			screenShot="false">
+		</Field>
+		<Field id="" type="selectSpinner" fieldLabel="" pathType=""
+			screenShot="false">
+		</Field>
+
+		<Field id="fldMediaReference" type="textfield"
+			fieldLabel="Enter value in Media Reference field" pathType="css"
+			screenShot="false">
+		</Field>
+		<Field id="fldTransactionDate" type="textfield"
+			fieldLabel="Enter future date" pathType="css" screenShot="false">
+		</Field>
+		<Field id="drpBank" type="select"
+			fieldLabel="Select Bank from dropdown" pathType="css"
+			screenShot="false">
+		</Field>
+		<Field id="fldAmount" type="textfield"
+			fieldLabel="EnterGreaterAmount" pathType="css" screenShot="false">
+		</Field>
+		<Field id="" type="selectSpinner" fieldLabel="" pathType=""
+			screenShot="false">
+		</Field>
+		<Field id="btnOk" type="Button" fieldLabel="Click OK button"
+			pathType="css" screenShot="false">
+		</Field>
+		<Field id="allMandatoryMessage" type="assertGetText"
+			fieldLabel="Greater amount validation" pathType="css"
+			screenShot="true" validMessage="validation message is displayed"
+			errorMessage="validation message is not displayed">
+		</Field>
+		<Field id="fldAmount" type="cleartextfield"
+			fieldLabel="clear field" pathType="css" screenShot="false">
+		</Field>
+		<Field id="fldAmount" type="textfield"
+			fieldLabel="EnterLessAmount" pathType="css" screenShot="false">
+		</Field>
+		<Field id="btnOk" type="Button" fieldLabel="Click OK button"
+			pathType="css" screenShot="false">
+		</Field>
+
+		<Field id="" type="switchWindow" fieldLabel="Switch window"
+			pathType="css" screenShot="false">
+		</Field>
+		<Field id="modelWriteOffTitle" type="assertGetText"
+			fieldLabel="ModelTitle" pathType="css" screenShot="true"
+			validMessage="Write off difference window is displayed"
+			errorMessage="Write off difference window is not displayed">
+		</Field>
+		<Field id="modelWriteOffMessage" type="assertGetText"
+			fieldLabel="ModelMessage" pathType="css" screenShot="true"
+			validMessage="Write off difference window message is correct"
+			errorMessage="Write off difference window message is not correct">
+		</Field>
+		<Field id="btnCancelWriteOffModel" type="Button"
+			fieldLabel="Click cancel button" pathType="css" screenShot="false">
+		</Field>
+
+		<Field id="" type="returnMainWindow"
+			fieldLabel="Switch main window" pathType="css" screenShot="false">
+		</Field>
+	
+	     <Field id="btnOk" type="Button" fieldLabel="Click OK button"
+		pathType="css" screenShot="false">
+	      </Field>
+
+	<Field id="" type="switchWindow" fieldLabel="Switch window"
+		pathType="css" screenShot="false">
+	</Field>
+	<Field id="btnNoWriteOffModel" type="Button"
+		fieldLabel="Click No button" pathType="css" screenShot="false">
+	</Field>
+	<Field id="" type="returnMainWindow"
+		fieldLabel="Switch main window" pathType="css" screenShot="false">
+	</Field>
+
+</Screen>
+	<Screen id="TransactionConfirmation"
+		title="Transaction Confirmation">
+		<Field id="btnYesInDocumentIssuePopup" type="buttonJS"
+			fieldLabel="Yes" pathType="css" screenShot="false">
+		</Field>
+		<Field id="spinner" type="selectSpinner"
+			fieldLabel="spinnerWait" screenShot="false">
+		</Field>
+		<Field id="lnkInfo" type="link" fieldLabel="Info link"
+			pathType="css" screenShot="true">
+		</Field>
+		<Field id="lnkPolicyNo" type="dynamicHashMap"
+			fieldLabel="Policynumber" pathType="css" screenShot="false">
+		</Field>
+		<Field id="lnkCompanyName" type="link" fieldLabel="CompanyName"
+			pathType="css" screenShot="false">
+		</Field>
+		<Field id="spinner" type="selectSpinner"
+			fieldLabel="spinnerWait" screenShot="false">
+		</Field>
+	</Screen>
+	<Screen id="CorporateClient" title="Corporate Client Details">
+		<Field id="lnkFinance" type="Button"
+			fieldLabel="Finance ribbon menu" pathType="css" screenShot="false">
+		</Field>
+		<Field id="lnkTransactions" type="Button"
+			fieldLabel="Transaction ribbon menu" pathType="css"
+			screenShot="false">
+		</Field>
+	</Screen>
+
+	<Screen id="SearchTransactions" title="SSP - Pure Insurance">
+
+		<Field id="fldAccountCode" type="textfield"
+			fieldLabel="Company Code" pathType="css" screenShot="false">
+		</Field>
+
+
+		<Field id="tabReference" type="link" fieldLabel="Reference Tab"
+			pathType="css" screenShot="false">
+		</Field>
+		<Field id="fldPolicyNumber" type="textfield"
+			fieldLabel="Policynumber" pathType="css" screenShot="false">
+		</Field>
+		<Field id="btnFind" type="Button"
+			fieldLabel="Click on Find button" pathType="css" screenShot="false">
+		</Field>
+
+		<Field id="O/SAmountAllRow" type="assertGetText"
+			fieldLabel="O/S Amount in Client's account" pathType="css"
+			screenShot="true"
+			validMessage="Amount is posted correctly in client account"
+			errorMessage="Amount is not correctly posted in client account">
+		</Field>
+
+
+	</Screen>
+</Selenium>

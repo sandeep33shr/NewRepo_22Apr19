@@ -1,0 +1,17 @@
+<Config>
+	<Feature id="US_6453" title="Collection Details Screen">
+		<TC id="TC_6453_6822"
+			Description="This test case is designed to check availability and functionality of Collection Details screen duriong Quote and Buy process"
+			XML_Location="US_6453\TC_6453_6822.xml" Iteration="1">
+		</TC>
+		<TC id="TC_6453_8659"
+			Description="This test case is designed to check availability and functionality of Write off difference screen during quote and buy process"
+			XML_Location="US_6453\TC_6453_8659.xml" Iteration="1">
+		</TC>
+		<TC id="TC_6453_8659_01"
+			Description="This test case is designed to check availability and functionality of Yes button of Write off difference screen during quote and buy process"
+			XML_Location="US_6453\TC_6453_8659_01.xml" Iteration="1">
+		</TC>
+
+	</Feature>
+</Config>

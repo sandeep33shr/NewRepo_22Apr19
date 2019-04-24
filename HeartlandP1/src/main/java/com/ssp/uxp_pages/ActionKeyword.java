@@ -12,6 +12,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -159,6 +160,26 @@ public class ActionKeyword {
 				throw new Exception(e);
 			}
 			break;
+		case "switchWindow":
+			
+			try {
+				Set<String> allWindowHandles = driver.getWindowHandles();
+				 
+				 for(String handle : allWindowHandles)
+				 {				
+				 driver.switchTo().window(handle); 
+				 				 }
+			} catch (Exception e) {
+				throw new Exception(e);
+			}
+			break;
+		case "returnMainWindow":
+			try {
+				driver.switchTo().defaultContent();
+			} catch (Exception e) {
+				throw new Exception(e);
+			}
+			break;
 
 		case "scrollUp":
 			try {
@@ -298,7 +319,7 @@ public class ActionKeyword {
 		case "alertAccept":
 			driver.switchTo().alert().accept();
 			break;
-
+		
 		case "alertMessages":
 			String temp = driver.switchTo().alert().getText();
 			Log.message(temp, driver, extentedReport, false);
@@ -321,7 +342,7 @@ public class ActionKeyword {
 		case "assertEnabledPositive":
 			isEnabledTrue(pathType, path, true, validMessage, errorMessage, driver, extentedReport, screenshot);
 			break;
-					
+
 		case "assertEnabledNegative":
 			isEnabledTrue(pathType, path, false, validMessage, errorMessage, driver, extentedReport, screenshot);
 			break;
@@ -810,7 +831,11 @@ public class ActionKeyword {
 	public static void enterTextUsingActionsClass(String fieldLabel, String pathType, String path, String input,
 			WebDriver driver, ExtentTest extentedReport, boolean screenshot) throws Exception {
 		try {
-
+			if (fieldLabel.equals("EnterGreaterAmount")) {
+				input = String.valueOf(Double.parseDouble(dynamicHashMap.get("GPremium")) + 1);
+			}else if (fieldLabel.equals("EnterLessAmount")) {
+				input = String.valueOf(Double.parseDouble(dynamicHashMap.get("GPremium")) - 1);
+			}
 			By locator;
 			locator = locatorValue(pathType, path);
 			WaitUtils.waitForSpinner(driver);
@@ -1372,13 +1397,14 @@ public class ActionKeyword {
 			WebDriver driver, ExtentTest extentedReport, boolean screenshot) throws Exception {
 		try {
 			boolean status = false;
-			String a;
+
 			By locator;
 			locator = ActionKeyword.locatorValue(pathType, path);
 			WaitUtils.waitForSpinner(driver);
 			WebElement element = driver.findElement(locator);
 			/* WaitUtils.waitForElement(driver, element); */
-			System.out.println("Expected:--" + element.getText() + "--Actual--" + input);
+			System.out.println("Actual--->" + element.getText());
+			System.out.println("Expected:--" + input);
 			if (element.getText().equals(input)) {
 
 				status = true;
@@ -1463,11 +1489,13 @@ public class ActionKeyword {
 
 			boolean status = false;
 			By locator;
+
 			locator = ActionKeyword.locatorValue(pathType, path);
 			WebElement element = driver.findElement(locator);
 			// WaitUtils.waitForElement(driver, element);
 			String actualResult = element.getAttribute(attribute);
 			actualResult = removeDelimiterFromText(actualResult);
+			System.out.println("Actual-->" + actualResult + "--Expected-->" + element.getAttribute(attribute));
 			if (actualResult.equals(expectedResult)) {
 				status = true;
 			}
@@ -1968,7 +1996,6 @@ public class ActionKeyword {
 			Log.fail("Fail to achieve expected result : " + errorMessage, driver, extentedReport, true);
 		}
 	}
-	
 
 	/**
 	 * To click on link.
@@ -2237,14 +2264,14 @@ public class ActionKeyword {
 
 			boolean status = false;
 			By locator;
-			
+
 			locator = ActionKeyword.locatorValue(pathType, path);
 			List<WebElement> elements = driver.findElements(locator);
-			/*WebElement element = driver.findElement(locator);*/
+			/* WebElement element = driver.findElement(locator); */
 			for (WebElement element : elements) {
-			if (element.isSelected()) {
-				status = true;
-			}
+				if (element.isSelected()) {
+					status = true;
+				}
 			}
 			Log.softAssertThat(status, validMessage, "Fail to achieve expected result : " + errorMessage, driver,
 					extentedReport, screenshot);

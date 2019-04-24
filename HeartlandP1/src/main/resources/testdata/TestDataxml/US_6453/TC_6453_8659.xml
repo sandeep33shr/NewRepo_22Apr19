@@ -1,0 +1,29 @@
+<Selenium>
+
+	<Iteration id="Iteration_0">
+
+		<Field fieldLabel="Select value from dropdown" input="Cash">
+		</Field>
+
+		<Field fieldLabel="Policynumber" input="dynamicHashMap">
+		</Field>
+		<Field fieldLabel="Enter value in Media Reference field"
+			input="Media Reference value">
+		</Field>
+		<Field fieldLabel="Enter future date" input="25/12/2020">
+		</Field>
+		<Field fieldLabel="Select Bank from dropdown"
+			input="Bank Suspense Account">
+		</Field>
+		<Field fieldLabel="Greater amount validation"
+			input="Collection amount could not be greater than transaction amount.">
+		</Field>
+		<Field fieldLabel="ModelTitle" input="Write Off Difference">
+		</Field>
+		<Field fieldLabel="ModelMessage"
+			input="Do you wish to write off the remaining amount of 1.00 ? Select Reason to write off">
+		</Field>
+		<Field fieldLabel="O/S Amount in Client's account" input="1.00">
+		</Field>
+	</Iteration>
+</Selenium>

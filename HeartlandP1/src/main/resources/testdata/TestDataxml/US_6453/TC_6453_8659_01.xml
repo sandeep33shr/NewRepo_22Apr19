@@ -1,0 +1,35 @@
+<Selenium>
+
+	<Iteration id="Iteration_0">
+
+		<Field fieldLabel="Value of Receipt Dropdown" input="Receipts">
+		</Field>
+
+		<Field fieldLabel="Summary of cover title"
+			input="SUMMARY OF COVER">
+		</Field>
+
+		<Field fieldLabel="Select value from dropdown" input="Cash">
+		</Field>
+
+		<Field fieldLabel="Policynumber" input="dynamicHashMap">
+		</Field>
+		<Field fieldLabel="Enter value in Media Reference field"
+			input="Media Reference value">
+		</Field>
+		<Field fieldLabel="Enter future date" input="25/12/2020">
+		</Field>
+		<Field fieldLabel="Select Bank from dropdown"
+			input="Bank Suspense Account">
+		</Field>
+		<Field fieldLabel="Select write off reason"
+			input="Irrecoverable bad debt">
+		</Field>
+		<Field fieldLabel="Amount in Client's account" input="0.00">
+		</Field>
+		<Field fieldLabel="Value of transaction Ref in credit section" input="SRP,SWD">
+		</Field>
+		<Field fieldLabel="Value of Allocated Amount in credit section" input="-1.00">
+		</Field>
+	</Iteration>
+</Selenium>

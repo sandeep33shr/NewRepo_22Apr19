@@ -1,5 +1,5 @@
 <Selenium>
-	
+
 	<Screen id="LoginScreen" title="Authentication Interface">
 		<Field id="fldUserName" path="#signupEmail">
 		</Field>
@@ -89,7 +89,8 @@
 	<Screen id="ViewClientDetails" title="SSP - Pure Insurance">
 		<Field id="iframeIn" path="TB_iframeContent">
 		</Field>
-		<Field id="titleReceiptCTV" path=".bootstrap-dialog-header [id*='title']">
+		<Field id="titleReceiptCTV"
+			path=".bootstrap-dialog-header [id*='title']">
 		</Field>
 		<Field id="lnkClient"
 			path="#ctl00_RibbonMenu_rptCategory_ctl01_RptCategorySpanText">
@@ -820,6 +821,10 @@
 		</Field>
 		<Field id="lblViewClientDetails"
 			path="#ctl00_cntMainBody_lblViewClient">
+		</Field>
+
+		<Field id="lnkTransactions"
+			path="#ctl00_RibbonMenu_rptCategory_ctl04_rptSection_ctl00_rptItem_ctl00_A1">
 		</Field>
 		// Address
 		<Field id="tabAddresses" path="a[href='#tab-editaddresses']">
@@ -2577,9 +2582,10 @@
 		<Field id="chkPayNow" path="input[value*='PayNow']">
 		</Field>
 		<Field id="getPremium"
-			path="div#ctl00_cntMainBody_MultiRisk1_grdvRisk table td:nth-child(5)"></Field>
-		<Field id="getPremium"
 			path="div#ctl00_cntMainBody_MultiRisk1_grdvRisk table td:nth-child(5)">
+		</Field>
+		<Field id="getGrossPremium"
+			path="#ctl00_cntMainBody_lblPremiumValue">
 		</Field>
 		<Field id="getTransactionType"
 			path="//label[text()='Policy Type']/parent::div//p">
@@ -2601,6 +2607,9 @@
 		</Field>
 		<Field id="getCompanyName"
 			path="//label[text()='Company Name']/parent::div//p">
+		</Field>
+		<Field id="titleSummaryOfCover"
+			path=".card-heading h1">
 		</Field>
 	</Screen>
 
@@ -2741,6 +2750,9 @@
 		<Field id="transactionsAmount2ndRow"
 			path="#ctl00_cntMainBody_UpdDocRefTransaction tr:nth-child(2) td:nth-child(9)">
 		</Field>
+		<Field id="O/SAmountAllRow"
+			path="#ctl00_cntMainBody_UpdDocRefTransaction td:nth-child(10)">
+		</Field>
 		<Field id="O/SAmount1stRow"
 			path="#ctl00_cntMainBody_UpdDocRefTransaction tr:nth-child(1) td:nth-child(10)">
 		</Field>
@@ -2801,6 +2813,12 @@
 		</Field>
 		<Field id="lblAll"
 			path="div#ctl00_cntMainBody_PnlDocumentCol label[id]:not([id$='_lblCalenderIcon'])">
+		</Field>
+		<Field id="creditSectionTransRef"
+			path="#ctl00_cntMainBody_gvCredits td:nth-child(1)">
+		</Field>
+		<Field id="creditSectionAllocatedAmount2ndrow"
+			path="#ctl00_cntMainBody_gvCredits tr:nth-child(2) td:nth-child(4)">
 		</Field>
 
 	</Screen>
@@ -2863,6 +2881,27 @@
 		</Field>
 		<Field id="lblTitleCollectionDetails"
 			path="#ctl00_cntMainBody_PayNow_CollectionItem_lblReceiptTypeHeading">
+		</Field>
+		<Field id="modelWriteOffTitle"
+			path="#divWriteOff #exampleModalLabel">
+		</Field>
+		<Field id="modelWriteOffMessage"
+			path="span#ctl00_cntMainBody_PayNow_CollectionItem_ConfirmBox_lblMessage">
+		</Field>
+		<Field id="lblWriteOffReason"
+			path="#ctl00_cntMainBody_PayNow_CollectionItem_ConfirmBox_lblWriteOffReason">
+		</Field>
+		<Field id="drpWriteOffReason"
+			path="select#ctl00_cntMainBody_PayNow_CollectionItem_ConfirmBox_writeOffReason">
+		</Field>
+		<Field id="btnCancelWriteOffModel"
+			path="#ctl00_cntMainBody_PayNow_CollectionItem_ConfirmBox_btnCancel">
+		</Field>
+		<Field id="btnNoWriteOffModel"
+			path="a#ctl00_cntMainBody_PayNow_CollectionItem_ConfirmBox_btnNo">
+		</Field>
+		<Field id="btnYesWriteOffModel"
+			path="a#ctl00_cntMainBody_PayNow_CollectionItem_ConfirmBox_btnYes">
 		</Field>
 
 	</Screen>
@@ -2950,8 +2989,8 @@
 		</Field>
 		<Field id="chkCommonPath"
 			path="td:nth-child(1) [id$='chkMarked']">
-		</Field>		
-		
+		</Field>
+
 	</Screen>
 	<Screen id="COLLECTIONLIST" title="SSP - Pure Insurance">
 		<Field id="ReceiptRef"
@@ -2970,9 +3009,11 @@
 		</Field>
 		<Field id="lnkActionMenu" path="a[title='Action Menu']">
 		</Field>
-		<Field id="lnkEditAllocation" path="#ctl00_cntMainBody_CollectionItems_gvCollectionItems_ctl02_btnEdit">
+		<Field id="lnkEditAllocation"
+			path="#ctl00_cntMainBody_CollectionItems_gvCollectionItems_ctl02_btnEdit">
 		</Field>
-		<Field id="lnkViewReceipt" path="#ctl00_cntMainBody_CollectionItems_gvCollectionItems_ctl02_li1 a">
+		<Field id="lnkViewReceipt"
+			path="#ctl00_cntMainBody_CollectionItems_gvCollectionItems_ctl02_li1 a">
 		</Field>
 		<Field id="btnAdd"
 			path="#ctl00_cntMainBody_CollectionItems_btnAdd">
@@ -2994,7 +3035,8 @@
 		</Field>
 		<Field id="iframeIn" path="TB_iframeContent">
 		</Field>
-		<Field id="titleReceiptCTV" path=".bootstrap-dialog-header [id*='title']">
+		<Field id="titleReceiptCTV"
+			path=".bootstrap-dialog-header [id*='title']">
 		</Field>
 
 	</Screen>

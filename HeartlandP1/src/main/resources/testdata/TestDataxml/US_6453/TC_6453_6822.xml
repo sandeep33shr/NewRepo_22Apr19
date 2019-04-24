@@ -1,0 +1,37 @@
+<Selenium>
+
+	<Iteration id="Iteration_0">
+		<Field fieldLabel="all fields"
+			input="Account:,Balance,Branch,Currency,Receipt Type,Media Type,Media Reference,Transaction Date,Amount,Bank,Produce Documents,Comments">
+		</Field>
+		<Field fieldLabel="Company Code" input="dynamicHashMap">
+		</Field>
+		<Field fieldLabel="GPremium" input="dynamicHashMap">
+		</Field>
+		<Field fieldLabel="Branch" input="HeadOff">
+		</Field>
+		<Field fieldLabel="Currency" input="GBP">
+		</Field>
+		<Field fieldLabel="Select value from dropdown" input="Cash">
+		</Field>
+		<Field fieldLabel="Value of Bank Dropdown"
+			input="Client Bank Account">
+		</Field>
+		<Field fieldLabel="Get Max length of commentbox" input="100">
+		</Field>
+		<Field fieldLabel="Policynumber" input="dynamicHashMap">
+		</Field>
+		<Field fieldLabel="Enter value in Media Reference field"
+			input="Media Reference value">
+		</Field>
+		<Field fieldLabel="Enter future date" input="25/12/2020">
+		</Field>
+		<Field fieldLabel="Select Bank from dropdown"
+			input="Bank Suspense Account">
+		</Field>
+		<Field fieldLabel="Amount in Client's account" input="0.00">
+		</Field>
+
+
+	</Iteration>
+</Selenium>
