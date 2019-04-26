@@ -133,6 +133,10 @@
 			XML_Location="CreateClientAndPolicy\CreateClient_GuestHouse_SaveQuote.xml"
 			Iteration="1">
 		</TC>
-	
+	<TC id="TC_7330_FullCommMovementQnBProcess"
+			Description="This test case is designed to test full commission movement during QnB process"
+			XML_Location="CreateClientAndPolicy\CreateClient_GuestHouse_SaveQuote.xml"
+			Iteration="1">
+		</TC>
 	</Feature>
 </Config>

@@ -18,6 +18,8 @@
         <methods>
           <include name="afterSuite"/>
           <include name="beforeSuite"/>
+          <include name="TC_6453_6822"/>
+          <include name="TC_6453_8659"/>
           <include name="TC_6453_8659_01" invocation-numbers="0"/>
           <include name="init"/>
           <include name="closeBrowser"/>

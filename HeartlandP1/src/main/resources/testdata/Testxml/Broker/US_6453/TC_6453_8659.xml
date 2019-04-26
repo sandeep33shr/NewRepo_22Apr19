@@ -1,4 +1,27 @@
 <Selenium>
+<Screen id="PremiumDisplay" title="Premium Display">
+		<Field id="getPremium" type="dynamicHashMap"
+			fieldLabel="Premium" pathType="css" screenShot="false">
+		</Field>
+		<Field id="getGrossPremium" type="dynamicHashMap"
+			fieldLabel="GPremium" pathType="css" screenShot="false">
+		</Field>
+		<Field id="getTransactionType" type="dynamicHashMap"
+			fieldLabel="Transaction Type" pathType="xpath" screenShot="false">
+		</Field>
+		<Field id="getCompanyName" type="dynamicHashMap"
+			fieldLabel="Company Name" pathType="xpath" screenShot="false">
+		</Field>
+		<Field id="radioPayNow" type="radioButton" fieldLabel="payNow"
+			pathType="css" screenShot="true">
+		</Field>
+		<Field id="btnBuy" type="buttonJS" fieldLabel="Buy"
+			pathType="css" screenShot="false">
+		</Field>
+		<Field id="spinner" type="selectSpinner"
+			fieldLabel="spinnerWait" screenShot="false">
+		</Field>
+	</Screen>
 
 	<Screen id="CollectionDetails" title="SSP - Pure Insurance">
 

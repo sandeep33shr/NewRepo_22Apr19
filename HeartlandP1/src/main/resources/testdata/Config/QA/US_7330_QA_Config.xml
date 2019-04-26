@@ -1,0 +1,11 @@
+<Config>
+	<Feature id="US_7330" title="Commission movement">
+		<TC id="TC_7330_FullCommMovementQnBProcess"
+			Description="Prerequisite"
+			XML_Location="US_7330\TC_7330_FullCommMovementQnBProcess.xml"
+			Iteration="1">
+		</TC>
+
+
+	</Feature>
+</Config>
